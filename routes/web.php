@@ -25,3 +25,5 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::get('auth/facebook', [SocialController::class, 'facebookRedirect'])->name('login.facebook');
 
 Route::get('auth/facebook/callback', [SocialController::class, 'facebookCallback']);
+
+Route::get('/dashboard', [App\Http\Controllers\HomeController::class, 'facebookCallback'])->name('dashboard');
